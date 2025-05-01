@@ -1,0 +1,97 @@
+:root {
+    --bg: #f4f7fa;
+    --text: #333;
+    --card: white;
+    --primary: #0db7ed;
+    --header: #0db7ed;
+  }
+  
+  [data-theme="dark"] {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --card: #1e1e1e;
+    --primary: #61dafb;
+    --header: #1f1f1f;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header {
+    background-color: var(--header);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .toggle-theme {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  section {
+    background: var(--card);
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+  }
+  
+  pre {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    margin-top: 40px;
+  }
+  

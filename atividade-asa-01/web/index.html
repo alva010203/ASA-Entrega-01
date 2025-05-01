@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Guia Docker para Iniciantes</title>
+  <style>
+    :root {
+      --bg: #f4f7fa;
+      --text: #333;
+      --card: white;
+      --primary: #0db7ed;
+      --header: #0db7ed;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card: #1e1e1e;
+      --primary: #61dafb;
+      --header: #1f1f1f;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--header);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toggle-theme {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      background: var(--card);
+      margin: 30px auto;
+      max-width: 900px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: var(--primary);
+    }
+
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Modo Escuro</button>
+
+  <header>
+    <h1>Guia Docker para Iniciantes</h1>
+    <p>Resumo, comandos e exemplos práticos</p>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="comandos.html">Comandos Avançados</a>
+      <a href="dockerfi.html">Dockerfile</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>📌 O que é Docker?</h2>
+    <p>Docker é uma plataforma para empacotar e executar aplicações em containers...</p>
+  </section>
+
+  <footer>
+    Feito com ❤️ por você. Abril/2025.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      if (currentTheme === "dark") {
+        html.setAttribute("data-theme", "light");
+      } else {
+        html.setAttribute("data-theme", "dark");
+      }
+    }
+  </script>
+
+</body>
+</html>
