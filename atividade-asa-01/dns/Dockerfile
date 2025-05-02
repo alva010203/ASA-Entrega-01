@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-#evita perguntas na instalação
-ENV DEBIAN_FRONTEND=noninteractive
+#evita interações em pacotes complexos(aprova de problemas futuros)
+#ENV DEBIAN_FRONTEND=noninteractive
 
 #atualiza e instala os pacote necessários
 RUN apt update && apt install -y bind9 dnsutils 
