@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dockerfile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Modo Escuro</button>
+
+  <header>
+    <h1>Dockerfile</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="comandos.html">Comandos Avançados</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Exemplo básico</h2>
+    <pre><code># Dockerfile
+FROM node:18
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["node", "index.js"]
+</code></pre>
+
+    <h2>Instruções comuns</h2>
+    <ul>
+      <li><code>FROM</code>: Define a imagem base</li>
+      <li><code>WORKDIR</code>: Define o diretório de trabalho</li>
+      <li><code>COPY</code>: Copia arquivos do host</li>
+      <li><code>RUN</code>: Executa comandos</li>
+      <li><code>CMD</code>: Define o comando padrão</li>
+    </ul>
+  </section>
+
+  <footer>
+    Domine o Dockerfile e crie imagens como um mestre. 🐳
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      if (currentTheme === "dark") {
+        html.setAttribute("data-theme", "light");
+      } else {
+        html.setAttribute("data-theme", "dark");
+      }
+    }
+  </script>
+</body>
+</html>
+

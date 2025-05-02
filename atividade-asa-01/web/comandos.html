@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Comandos Avançados Docker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Modo Escuro</button>
+
+  <header>
+    <h1>Comandos Avançados Docker</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="dockerfi.html">Dockerfile</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Volumes</h2>
+    <pre><code># Criar um volume
+docker volume create meu-volume
+
+# Usar volume em container
+docker run -d -v meu-volume:/dados nginx
+</code></pre>
+
+    <h2>Docker Compose</h2>
+    <pre><code># Subir stack com docker-compose
+docker-compose up -d
+
+# Parar stack
+docker-compose down
+</code></pre>
+
+    <h2>Redes personalizadas</h2>
+    <pre><code># Criar rede bridge
+docker network create minha-rede
+
+# Rodar container conectado à rede
+docker run -d --network=minha-rede nginx
+</code></pre>
+  </section>
+
+  <footer>
+    Comandos úteis para dominar o Docker. 🌊
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      if (currentTheme === "dark") {
+        html.setAttribute("data-theme", "light");
+      } else {
+        html.setAttribute("data-theme", "dark");
+      }
+    }
+  </script>
+</body>
+</html>
+
