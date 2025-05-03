@@ -17,16 +17,16 @@
 - **WEB** ( )   
 - **Client**( )
   
-✅ **Código-fonte** dos serviços implementados (dns,web,cliente).  
+✅ **Estrutura** dos serviços implementados (dns,web,cliente).  
 
 ✅ **documento da apresentação do projeto**(em PDF) e **vídeo demonstrativo**.  
 
-✅ **Instruções claras** para execução local .
+✅ **Instruções** para execução local .
 
 ----
 ## 📂Arquitetura 
 
-**A arquitetura é baseada em três containers Dockers interconectados: um servidor web( ), um serviço de DNS(bind9), e um cliente. Cada componente é isolado e se comunica por meio de uma rede bridge interna, essa divisão garante isolamento,e segurança**
+**A arquitetura é baseada em três containers Dockers interconectados: um servidor web( ), um serviço de DNS(), e um cliente. Cada componente é isolado e se comunica por meio de uma rede bridge interna, essa divisão garante isolamento,e segurança**
 
 ### 📜Diagrama da Arquitetura
 
@@ -39,8 +39,8 @@
 
 | Serviço | Imagem Base     | Função                          |
 |---------|------------------|---------------------------------|
-| `web`   |  (  )      | Servidor web com o codigo html     |
-| `Client`   | ( ) | Usado para           |
-| `dns`   | bind9/custom     | Serviço DNS para resolver nome   |
+| `web`   |  ( Nginx )      | Servidor web executando o site www.seminariodocker.com |
+| `Client`   | (Ubuntu ) | Usado para simular um cliente acessando o site.    |
+| `dns`   | (ubuntu)    | Serviço DNS para resolver o ip do servidor web.   |
 
 ## Comunicação e motivaÇões tecnicas
