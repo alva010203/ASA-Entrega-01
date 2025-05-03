@@ -26,9 +26,11 @@
 ----
 ## 📂Arquitetura 
 
-**A arquitetura é baseada em três containers Dockers interconectados: um servidor web( ), um serviço de DNS(bind9), e um cliente. Cada componente é isolado e se comunica por meio de uma rede docker interna**
+**A arquitetura é baseada em três containers Dockers interconectados: um servidor web( ), um serviço de DNS(bind9), e um cliente. Cada componente é isolado e se comunica por meio de uma rede bridge interna, essa divisão garante isolamento,e segurança**
 
 ### 📜Diagrama da Arquitetura
+
+
 
 ---
 
@@ -41,4 +43,4 @@
 | `Client`   | ( ) | Usado para           |
 | `dns`   | bind9/custom     | Serviço DNS para resolver nome   |
 
-##
+## Comunicação e motivaÇões tecnicas
