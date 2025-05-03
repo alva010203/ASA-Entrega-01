@@ -1,6 +1,6 @@
 $TTL    604800
 @       IN      SOA     ns1.asa.br. root.asacobra.br. (
-                        2         ; Serial
+                        3         ; Serial
                         604800    ; Refresh
                         86400     ; Retry
                         2419200   ; Expire
@@ -10,10 +10,10 @@ $TTL    604800
 ; Servidor NS
 @        IN      NS      ns1.asa.br.
 ; IP do domínio principal
-@        IN      A       192.168.1.168
+@        IN      A       192.168.66.74
 ; Servidor DNS
-ns1      IN      A       192.168.1.168
+ns1      IN      A       192.168.66.74
 ; Site principal
-www      IN      A       192.168.1.168
+www      IN      A       192.168.66.74
 ; Apelido para www
 web      IN      CNAME   www
