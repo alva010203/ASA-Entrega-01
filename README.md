@@ -13,12 +13,10 @@ O projeto demonstra, de forma prática:**
 ### 🧩 O que está incluido?
 ✅ **Arquitetura do projeto e diagrama**.  
 
-✅ **3 containers Docker e seus arquivos de configuração**.  
+✅ **2 containers Docker e seus arquivos de configuração**.  
 - **DNS** ( )  
 - **WEB** ( )   
-- **Client**( )
-  
-✅ **Estrutura** dos serviços implementados (dns,web,cliente).  
+✅ **Estrutura** dos serviços implementados (dns,web).  
 
 ✅ **documento da apresentação do projeto**(em PDF) e **vídeo demonstrativo**.  
 
@@ -27,8 +25,7 @@ O projeto demonstra, de forma prática:**
 ----
 ## 🛠️Arquitetura 
 
-**A arquitetura é baseada em três containers Dockers interconectados: um servidor web( ), um serviço de DNS(), e um cliente. Cada componente é isolado e se comunica por meio de uma rede bridge interna, essa divisão garante isolamento,e segurança**
-
+**A arquitetura usa dois containers Docker: servidor web, serviço de DNS. O DNS resolve domínios em IPs, o servidor web processa requisições HTTP e retorna respostas, e o cliente consulta o DNS para acessar o site hospedado no servidor web por meio da URL www.asa.br . Todos se comunicam por uma rede bridge interna, garantindo isolamento e segurança.**
 ### 📜Diagrama da Arquitetura
 
 
@@ -40,29 +37,28 @@ O projeto demonstra, de forma prática:**
 
 | Serviço | Imagem Base     | Função                          |
 |---------|------------------|---------------------------------|
-| `web`   |  ( Nginx )      | Servidor web executando o site www.seminariodocker.com |
-| `Client`   | (Ubuntu ) | Usado para simular um cliente acessando o site.    |
+| `web`   |  ( Nginx )      | Servidor web executando o site www.asa.br |
 | `dns`   | (ubuntu)    | Serviço DNS para resolver o ip do servidor web.   |
 
 ---
 ## 📁 Estrutura
 
 ```
-atividade-asa-01/
-├── dns/
-│ ├── Dockerfile
-│ ├── db.asa.br
-│ └── named.conf.local
+atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
+├── dns/                       # Container DNS (BIND9)
+│   ├── Dockerfile            #  define a imagem Docker do servidor DNS
+│   ├── db.asa.br             #  arquivo de zona direta (resolução de “asa.br”)
+│   └── named.conf.local      #  configurações locais de zona (inclui db.asa.br)
 │
-├── web/
-│ ├── Dockerfile
-│ ├── index.html
-│ ├── comandos.html
-│ ├── dockerfi.html
-│ └── style.css
+├── web/                       # Container Web (servidor HTTP)
+│   ├── Dockerfile            #  define a imagem Docker do servidor Web
+│   ├── index.html            #  página inicial pública
+│   ├── comandos.html         #  doc explicando comandos usados no Docker
+│   ├── dockerfi.html         #  (ex.: guia de uso do Dockerfile em HTML)
+│   └── style.css             # → estilos visuais das páginas web
 │
-├── service.sh
-└── README.md
+├── service.sh                 # → script de boot dos containers
+└── README.md                  # → documentação geral do projeto e instruções
 ```
 ---
 ## 🖥️Apresentação projeto
