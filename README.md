@@ -1,6 +1,7 @@
 # ASA-Entrega-01 - Docker: Conceitos e Implementação
 ---
-## 📌 Descrição do Projeto
+
+## 📌 Descrição do Projeto  ![Status](https://img.shields.io/badge/Status-Funcionando-green)
 **Este repositório apresenta a entrega do seminário sobre Docker, realizado para a disciplina de ASA (Administração de Sistemas Abertos) com o professor [@salesfilho](https://github.com/salesfilho).
 O projeto demonstra, de forma prática:**
 - 🐳 **Conceitos fundamentais do Docker**
