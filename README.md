@@ -21,9 +21,9 @@ O projeto demonstra, de forma prática:**
 
 ✅ **[Apresentação](#Apresentação) do projeto e vídeo demonstrativo.**  
 
-✅ **[Instruções](Instruções) para execução local.** 
+✅ **[Instruções](#Instruções) para execução local.** 
 
-✅ **[Contribuidores](Contribuidores) do projeto.**
+✅ **[Contribuidores](#Contribuidores) do projeto.**
 
 ----
 <a name="Arquitetura"></a>
@@ -71,6 +71,7 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 
 <a name="Instruções"></a>
 ## 🚀 Instruçao execução local
+
 ### Pré requisitos
 -  **Instalado docker desktop ou docker engine**
 -  **Instalar o github caso vá usar o git clone**
