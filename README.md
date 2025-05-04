@@ -81,9 +81,9 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 ---
 <a name="Contribuidores"></a>
 ## 🤝Contribuidores
+ 
+-[@salva010203](https://github.com/alva010203) *Álvaro Augusto Pinheiro* 
 
--[@salva010203](https://github.com/alva010203) 
+-[Jaiir0](https://github.com/Jaiir0) *Jairo Bezerra de Araujo*
 
--[Jaiir0](https://github.com/Jaiir0)
-
--[yanmaia](https://github.com/yanmaia)
+-[yanmaia](https://github.com/yanmaia) *Yan Ferreira Maia*
