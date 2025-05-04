@@ -23,7 +23,8 @@ O projeto demonstra, de forma prática:**
 ✅ **Instruções** para execução local .
 
 ----
-## 🛠️Arquitetura (#Arquitetura)
+<a name="arquitetura"></a>
+## 🛠️Arquitetura 
 
 **A arquitetura usa dois containers Docker: servidor web, serviço de DNS. O DNS resolve domínios em IPs, o servidor web processa requisições HTTP e retorna respostas, e o cliente consulta o DNS para acessar o site hospedado no servidor web por meio da URL www.asa.br . Todos se comunicam por uma rede bridge interna, garantindo isolamento e segurança.**
 ### 📜Diagrama da Arquitetura
