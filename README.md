@@ -18,7 +18,7 @@ O projeto demonstra, de forma prática:**
 
 ✅ **[Estrutura](#Estrutura) dos serviços implementados (dns,web).**  
 
-✅ **[Apresentação do projeto](#Apresentação do projeto)  e vídeo demonstrativo**.  
+✅ **[Apresentação do projeto](#Apresentação do projeto)e vídeo demonstrativo**.  
 
 ✅ **[Instruções](Instruções) para execução local** .
 
