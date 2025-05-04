@@ -10,11 +10,12 @@ O projeto demonstra, de forma prática:**
 - 🛠️ **Implementação de serviços distribuídos**
 
 ### 🧩 O que está incluido?
-✅ **Arquitetura do projeto e diagrama**.  
+✅ **Arquitetura do projeto e diagrama [Arquitetura](#Arquitetura)**.  
 
 ✅ **2 containers Docker e seus arquivos de configuração**.  
-- **DNS** ( ) [dns](./atividade-asa-01/dns/)
-- **WEB** ( )   
+- **[dns](./atividade-asa-01/dns/)** 
+- **[web](./atividade-asa-01/web/)**  
+
 ✅ **Estrutura** dos serviços implementados (dns,web).  
 
 ✅ **documento da apresentação do projeto**(em PDF) e **vídeo demonstrativo**.  
