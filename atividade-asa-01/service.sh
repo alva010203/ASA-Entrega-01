@@ -14,19 +14,16 @@ web_container="web_container"
 # verifica se a rede existe; se não existir, ela é criada
 docker network inspect rede-asa >/dev/null 2>&1 || docker network create rede-asa
 
-# verifica o número de parâmetros
-if ! [ "$#" -eq 2 ]; then
-    echo "Número de parâmetros incorreto"
-    echo "Uso correto: $0 <serviço> <ação>"
-    exit 1
-fi
-
 case $servico in
   dns)
     case $acao in
       start)
-        echo "Iniciando o container $dns_container..."
-        docker start $dns_container 2>/dev/null || docker run --network rede-asa -p 53:53/udp -p 53:53/tcp --name $dns_container -d $img_dns
+        if  docker ps --format '{{.Names}}'| grep -q "$dns_container" ; then
+            echo "O container ja está em execução"
+        else
+            echo "Iniciando o container $dns_container..."
+            docker start $dns_container 2>/dev/null || docker run --network rede-asa -p 53:53/udp -p 53:53/tcp --name $dns_container -d $img_dns
+        fi
         ;;
       build)
         echo "Construindo a imagem $img_dns..."
@@ -67,8 +64,29 @@ case $servico in
         ;;
     esac
     ;;
+  --help)
+    echo "Uso: $0 <serviço> <ação>"
+    echo
+    echo "Serviços disponíveis:"
+    echo "  dns    - Gerencia o serviço de DNS (porta 53)"
+    echo "  web    - Gerencia o serviço Web (porta 80)"
+    echo
+    echo "Ações disponíveis para cada serviço:"
+    echo "  start  - Inicia o container"
+    echo "  stop   - Para o container"
+    echo "  build  - Constrói a imagem Docker a partir do Dockerfile local"
+    echo "  rm     - Remove o container"
+    echo
+    echo "Exemplos:"
+    echo "  $0 dns build     # Constrói a imagem do DNS"
+    echo "  $0 dns start     # Inicia o container do DNS"
+    echo "  $0 web stop      # Para o container Web"
+    echo "  $0 web rm        # Remove o container Web"
+    exit 0
+    ;;
   *)
-    echo "Serviço desconhecido, tente dns ou web"
+    echo "Formato inválido tente "--help" para ver as opções disponiveis "
+    exit 1
     ;;
 esac
 
