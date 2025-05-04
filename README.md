@@ -29,7 +29,7 @@ O projeto demonstra, de forma prática:**
 <a name="Arquitetura"></a>
 ## 🛠️Arquitetura 
 
-**A arquitetura usa dois containers Docker: servidor web, serviço de DNS. O DNS resolve domínios em IPs, o servidor web processa requisições HTTP e retorna respostas, e o cliente consulta o DNS para acessar o site hospedado no servidor web por meio da URL www.asa.br . Todos se comunicam por uma rede bridge interna, garantindo isolamento e segurança.**
+**A arquitetura utiliza dois containers Docker: servidor web e um serviço de DNS. O DNS resolve domínios em IPs, o servidor web processa requisições HTTP e retorna respostas, e o cliente consulta o DNS para acessar o site hospedado no servidor web por meio da URL www.asa.br . Todos se comunicam por uma rede bridge interna, garantindo isolamento e segurança.**
 ### 📜Diagrama da Arquitetura
 ![Image](https://github.com/user-attachments/assets/2e29c5b4-7a29-4ef5-859c-5fce92502147)
 
@@ -38,7 +38,7 @@ O projeto demonstra, de forma prática:**
 
 | Serviço | Imagem Base     | Função                          |
 |---------|------------------|---------------------------------|
-| `web`   |  ( Nginx )      | Servidor web executando o site www.asa.br |
+| `web`   |  ( Nginx )      | Servidor web que executa o site www.asa.br |
 | `dns`   | (ubuntu)    | Serviço DNS para resolver o ip do servidor web.   |
 
 ---
@@ -70,14 +70,14 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 ---
 
 <a name="Instruções"></a>
-## 🚀 Instruçao execução local
+## 🚀 Instruções para Execução Local
 
 ### Pré requisitos
 -  **Instalado docker desktop ou docker engine**
 -  **Instalar o github caso vá usar o git clone**
 ### Execução
 - **git clone https://github.com/alva010203/ASA-Entrega-01.git**
-- **CD ASA-entrega-01**
+- **cd ASA-Entrega-01**
 - **./service.sh dns start**    #inicia o container DNS
 - **./service.sh web start.**   #inicia o container WEB
 
@@ -86,8 +86,8 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 <a name="Contribuidores"></a>
 ## 🤝Contribuidores
  
--[@salva010203](https://github.com/alva010203) **Álvaro Augusto Pinheiro** 
+-[@salva010203](https://github.com/alva010203) - **Álvaro Augusto Pinheiro** 
 
--[Jaiir0](https://github.com/Jaiir0) **Jairo Bezerra de Araujo**
+-[Jaiir0](https://github.com/Jaiir0) - **Jairo Bezerra de Araujo**
 
--[yanmaia](https://github.com/yanmaia) **Yan Ferreira Maia**
+-[yanmaia](https://github.com/yanmaia) - **Yan Ferreira Maia**
