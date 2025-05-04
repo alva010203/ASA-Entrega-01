@@ -46,3 +46,22 @@
 ---
 ## 📁 Estrutura
 
+```
+atividade-asa-01/
+├── dns/
+│ ├── Dockerfile
+│ ├── db.asa.br
+│ └── named.conf.local
+│
+├── web/
+│ ├── Dockerfile
+│ ├── index.html
+│ ├── comandos.html
+│ ├── dockerfi.html
+│ └── style.css
+│
+├── service.sh
+└── README.md
+```
+---
+##documento
