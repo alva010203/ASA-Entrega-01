@@ -16,7 +16,7 @@ O projeto demonstra, de forma prática:**
 - **[dns](./atividade-asa-01/dns/)** 
 - **[web](./atividade-asa-01/web/)**  
 
-✅ **[Estrutura](#Estrutura)** dos serviços implementados (dns,web).  
+✅ **[Estrutura](#Estrutura) dos serviços implementados (dns,web).**  
 
 ✅ **apresentação do projeto**(em PDF) e **vídeo demonstrativo**.  
 
