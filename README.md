@@ -13,7 +13,7 @@ O projeto demonstra, de forma prática:**
 ✅ **Arquitetura do projeto e diagrama**.  
 
 ✅ **2 containers Docker e seus arquivos de configuração**.  
-- **DNS** ( )  
+- **DNS** ( ) [dns/](dns/) 
 - **WEB** ( )   
 ✅ **Estrutura** dos serviços implementados (dns,web).  
 
