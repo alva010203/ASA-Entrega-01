@@ -24,7 +24,7 @@
 ✅ **Instruções** para execução local .
 
 ----
-## 📂Arquitetura 
+## 🛠️Arquitetura 
 
 **A arquitetura é baseada em três containers Dockers interconectados: um servidor web( ), um serviço de DNS(), e um cliente. Cada componente é isolado e se comunica por meio de uma rede bridge interna, essa divisão garante isolamento,e segurança**
 
@@ -43,4 +43,6 @@
 | `Client`   | (Ubuntu ) | Usado para simular um cliente acessando o site.    |
 | `dns`   | (ubuntu)    | Serviço DNS para resolver o ip do servidor web.   |
 
-## Comunicação e motivaÇões tecnicas
+---
+## 📁 Estrutura
+
