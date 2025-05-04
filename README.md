@@ -18,9 +18,9 @@ O projeto demonstra, de forma prática:**
 
 ✅ **[Estrutura](#Estrutura) dos serviços implementados (dns,web).**  
 
-✅ **apresentação do projeto**(em PDF) e **vídeo demonstrativo**.  
+✅ **[Apresentação do projeto](#Apresentação do projeto)  e vídeo demonstrativo**.  
 
-✅ **Instruções** para execução local .
+✅ **[Instruções](Instruções) para execução local** .
 
 ----
 <a name="arquitetura"></a>
@@ -62,7 +62,8 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 └── README.md                  # → documentação geral do projeto e instruções
 ```
 ---
+<a name="Apresentação do projeto"></a>
 ## 🖥️Apresentação projeto
 
-
+<a name="Instruções"></a>
 #  Instruçao execução
