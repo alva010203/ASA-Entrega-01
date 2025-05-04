@@ -63,10 +63,12 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 └── README.md                  # → documentação geral do projeto e instruções
 ```
 ---
+
 <a name="Apresentação"></a>
 ## 🖥️Apresentação projeto
 
 ---
+
 <a name="Instruções"></a>
 ## 🚀 Instruçao execução local
 ### Pré requisitos
@@ -79,6 +81,7 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 - **./service.sh web start.**   #inicia o container WEB
 
 ---
+
 <a name="Contribuidores"></a>
 ## 🤝Contribuidores
  
