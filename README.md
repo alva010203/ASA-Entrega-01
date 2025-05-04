@@ -10,6 +10,7 @@ O projeto demonstra, de forma prática:**
 - 🛠️ **Implementação de serviços distribuídos**
 
 ### 🧩 O que está incluido?
+
 ✅ **[Arquitetura](#Arquitetura) do projeto e diagrama.**  
 
 ✅ **2 containers Docker e seus arquivos de configuração**.  
@@ -20,20 +21,20 @@ O projeto demonstra, de forma prática:**
 
 ✅ **[Apresentação](#Apresentação) do projeto e vídeo demonstrativo.**  
 
-✅ **[Instruções](Instruções) para execução local** .
+✅ **[Instruções](Instruções) para execução local.** 
+
+✅ **[Contribuidores](Contribuidores) do projeto.**
 
 ----
-<a name="arquitetura"></a>
+<a name="Arquitetura"></a>
 ## 🛠️Arquitetura 
 
 **A arquitetura usa dois containers Docker: servidor web, serviço de DNS. O DNS resolve domínios em IPs, o servidor web processa requisições HTTP e retorna respostas, e o cliente consulta o DNS para acessar o site hospedado no servidor web por meio da URL www.asa.br . Todos se comunicam por uma rede bridge interna, garantindo isolamento e segurança.**
 ### 📜Diagrama da Arquitetura
 ![Image](https://github.com/user-attachments/assets/2e29c5b4-7a29-4ef5-859c-5fce92502147)
 
----
-
 ### Componentes
--lista dos serviços/containers utilizados com uma descrição basica.
+**lista dos serviços/containers utilizados com uma descrição basica**.
 
 | Serviço | Imagem Base     | Função                          |
 |---------|------------------|---------------------------------|
@@ -65,5 +66,24 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 <a name="Apresentação"></a>
 ## 🖥️Apresentação projeto
 
+---
 <a name="Instruções"></a>
-#  Instruçao execução
+## 🚀 Instruçao execução local
+### Pré requisitos
+-  **Instalado docker desktop ou docker engine**
+-  **Instalar o github caso vá usar o git clone**
+### Execução
+- **git clone https://github.com/alva010203/ASA-Entrega-01.git**
+- **CD ASA-entrega-01**
+- **./service.sh dns start**    #inicia o container DNS
+- **./service.sh web start.**   #inicia o container WEB
+
+---
+<a name="Contribuidores"></a>
+## 🤝Contribuidores
+
+-[@salva010203](https://github.com/alva010203) 
+
+-[Jaiir0](https://github.com/Jaiir0)
+
+-[yanmaia](https://github.com/yanmaia)
