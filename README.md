@@ -9,7 +9,6 @@ O projeto demonstra, de forma prática:**
 
 - 🛠️ **Implementação de serviços distribuídos**
 
-
 ### 🧩 O que está incluido?
 ✅ **Arquitetura do projeto e diagrama**.  
 
