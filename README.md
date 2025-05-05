@@ -79,6 +79,8 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 ### Execução
 - **git clone https://github.com/alva010203/ASA-Entrega-01.git**
 - **cd ASA-Entrega-01**
+- **./service.sh dns build**    #constrói a imagem do DNS
+- **./service.sh dns build**    #constrói a imagem do serviço web
 - **./service.sh dns start**    #inicia o container DNS
 - **./service.sh web start.**   #inicia o container WEB
 
