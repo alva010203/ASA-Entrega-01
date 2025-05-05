@@ -68,6 +68,12 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 <a name="Apresentação"></a>
 ## 🖥️Apresentação projeto
 
+### VIDEO DE EXECUÇÃO
+
+https://drive.google.com/file/d/1HQL-vfYCLE38QZbGrWYz71LG8-QGZAtq/view?usp=sharing
+
+### Apresentação ppt
+https://docs.google.com/presentation/d/1hekmFoOlxINe768FG1csV4oggJ7k6p_c/edit?usp=sharing&ouid=100223105055311345713&rtpof=true&sd=true
 ---
 
 <a name="Instruções"></a>
