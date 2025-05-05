@@ -70,8 +70,8 @@ atividade-asa-01/               # Raiz do projeto da atividade ASA‑01
 
 ### VIDEO DE EXECUÇÃO
 https://drive.google.com/file/d/1HQL-vfYCLE38QZbGrWYz71LG8-QGZAtq/view?usp=drive_link
-### Apresentação ppt
-https://docs.google.com/presentation/d/1hekmFoOlxINe768FG1csV4oggJ7k6p_c/edit?usp=sharing&ouid=100223105055311345713&rtpof=true&sd=true
+### Apresentação pdf
+[Docker.pdf](https://github.com/user-attachments/files/20031055/Docker.pdf)
 ---
 
 <a name="Instruções"></a>
