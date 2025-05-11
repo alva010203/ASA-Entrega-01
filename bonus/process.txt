@@ -1,1 +1,37 @@
+Fazer a build dos dockers nginx
+
+docker build -t [nomebuild] ./nginx1
+docker build -t [nomebuild] ./nginx2
+
+Fazer a build do docker ubuntu
+
+docker build -t [name] ./ubuntu
+
+-------------------------------
+Criar a network 
+
+docker network create [rede]
+
+-------------------------------
+Docker run dos nginx
+
+docker run -d --name [nome] --network [rede] [nomebuild]
+docker run -d --name [nome] --network [rede] [nomebuild]
+
+Docker run do ubuntu
+
+docker run -it --name [nome] --network [rede] [nomebuild]
+
+-------------------------------
+
+comando para testar ping (ubuntu para nginx) 
+
+ping -c 4 [nome] 
+
+-------------------------------
+Obs: para retomar o terminal do ubuntu
+
+docker start -ai [container id] (caso parado)
+
+docker exec -it [container id] bash (iniciado para retomar o terminal)
 
