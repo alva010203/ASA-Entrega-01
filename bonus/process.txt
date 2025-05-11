@@ -1,6 +1,6 @@
 Fazer a build dos dockers nginx
 
-docker build -t [nomebuild] ./nginx1
+docker build -t [nomebuild] ./nginx
 docker build -t [nomebuild] ./nginx2
 
 Fazer a build do docker ubuntu
