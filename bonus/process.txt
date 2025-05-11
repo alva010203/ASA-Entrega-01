@@ -5,7 +5,7 @@ docker build -t [nomebuild] ./nginx2
 
 Fazer a build do docker ubuntu
 
-docker build -t [name] ./ubuntu
+docker build -t [namebuild] ./ubuntu
 
 -------------------------------
 Criar a network 
